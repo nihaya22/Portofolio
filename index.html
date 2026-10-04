@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b7458">
+  <meta name="description" content="Nihaya — my little creative space. UI/UX, web, mobile, design, editing, and creative projects.">
+  <title>Nihaya — my little creative space ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="leaf-bg leaf-1">✿</div>
+  <div class="leaf-bg leaf-2">❋</div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home"><span>🌿</span> Nihaya</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Ganti tema">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Nihaya<span>♥</span></h1>
+        <p class="tagline">my little creative space ♡</p>
+        <p class="intro">Mahasiswi Teknik Informatika yang suka membuat desain, website, mobile app, dan mengeksplorasi hal-hal kreatif.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#works">Explore My Works <b>→</b></a>
+          <a class="btn ghost" href="#about">About me</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="note-card">small steps<br><b>big dreams</b> ♡</div>
+        <div class="desk">
+          <div class="laptop">
+            <div class="screen"><span>🌿</span></div>
+            <div class="keyboard"></div>
+          </div>
+          <div class="matcha">🍵</div>
+          <div class="plant">🌱</div>
+          <div class="cat">◕ᴗ◕</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="peek container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">a little peek of my work ✦</p>
+          <p>Beberapa karya yang paling ingin aku tunjukkan dulu.</p>
+        </div>
+        <a href="#works" class="text-link">see all works →</a>
+      </div>
+      <div class="featured-grid">
+        <article class="project-card featured">
+          <img src="assets/flora-card.webp" alt="Detektif Flora">
+          <div class="project-body">
+            <h3>Detektif Flora</h3>
+            <p>Web · KKN · Informatics</p>
+            <a href="#flora" class="card-link">View project →</a>
+          </div>
+        </article>
+        <article class="project-card featured">
+          <img src="assets/chili.webp" alt="Chili Detector">
+          <div class="project-body">
+            <h3>Chili Detector</h3>
+            <p>UI/UX · Figma · Python</p>
+            <a href="#chili" class="card-link">View project →</a>
+          </div>
+        </article>
+        <article class="project-card featured">
+          <img src="assets/student-budget.webp" alt="Student Budget App">
+          <div class="project-body">
+            <h3>Student Budget App</h3>
+            <p>Mobile · Android · Kotlin</p>
+            <a href="#student-budget" class="card-link">View project →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="works" class="works container">
+      <div class="section-title">
+        <p class="eyebrow">✦ my creative world</p>
+        <h2>Things I've made<br><em>along the way.</em></h2>
+      </div>
+
+      <div class="deck-row"><button class="btn deck-btn" data-deck="0">▶ Mode Presentasi</button><span>Klik foto karya untuk melihat sebagai slide</span></div>
+
+      <div class="filters" role="tablist" aria-label="Kategori karya">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="uiux">UI/UX & Figma</button>
+        <button class="filter" data-filter="web">Web & Development</button>
+        <button class="filter" data-filter="mobile">Mobile App</button>
+        <button class="filter" data-filter="design">Design & Editing</button>
+        <button class="filter" data-filter="kkn">KKN & Creative</button>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card" data-category="web kkn" id="flora">
+          <div class="image-wrap"><img loading="lazy" src="assets/flora-card.webp" alt="Detektif Flora"></div>
+          <div class="work-info">
+            <span class="mini-tag">WEB · KKN</span>
+            <h3>Detektif Flora</h3>
+            <p>E-katalog tanaman — project Biologi × Informatika untuk dokumentasi flora.</p>
+            <div class="buttons">
+              <a href="https://github.com/nihaya22/Detektif-Flora" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://nihaya22.github.io/Detektif-Flora/" target="_blank" rel="noopener">Live Website ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="uiux" id="chili">
+          <div class="image-wrap tall"><img loading="lazy" src="assets/chili.webp" alt="Chili Detector"><img loading="lazy" src="assets/chili-result.webp" alt="Chili Detector - hasil deteksi"></div>
+          <div class="work-info">
+            <span class="mini-tag">UI/UX · FIGMA</span>
+            <h3>Chili Detector</h3>
+            <p>Konsep aplikasi untuk membantu klasifikasi kondisi cabai melalui gambar.</p>
+            <div class="buttons">
+              <a href="https://www.figma.com/design/aO3qYeuctGriLnaSgh46Yk/Chili-Detector?node-id=0-1" target="_blank" rel="noopener">Figma ↗</a>
+              <a href="https://github.com/nihaya22/citra-cabai" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="mobile" id="student-budget">
+          <div class="image-wrap tall"><img loading="lazy" src="assets/student-budget.webp" alt="Student Budget App"></div>
+          <div class="work-info">
+            <span class="mini-tag">MOBILE · ANDROID</span>
+            <h3>Student Budget App</h3>
+            <p>Aplikasi pengatur keuangan mahasiswa dengan halaman pendapatan, pengeluaran, dan transaksi.</p>
+            <div class="buttons">
+              <span class="muted-button">Project App</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="web" id="ecommerce">
+          <div class="image-wrap"><img loading="lazy" src="assets/ecommerce.webp" alt="E-Commerce Domain & Jasa Website"></div>
+          <div class="work-info">
+            <span class="mini-tag">WEB · LARAVEL</span>
+            <h3>E-Commerce Domain & Jasa Website</h3>
+            <p>Project website e-commerce berbasis Laravel untuk domain dan jasa website.</p>
+            <div class="buttons">
+              <a href="https://github.com/nihaya22/ecommerce-domain-barularavel" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="web" id="your-notes">
+          <div class="image-wrap"><img loading="lazy" src="assets/your-notes.webp" alt="Your Notes To Do List"></div>
+          <div class="work-info">
+            <span class="mini-tag">WEB · UI</span>
+            <h3>Your Notes</h3>
+            <p>To-do list sederhana dengan tampilan pastel yang dibuat sebagai project web personal.</p>
+            <div class="buttons">
+              <a href="https://nihaya22.github.io/QPkuet-To-Do-List-/" target="_blank" rel="noopener">Live Website ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="uiux">
+          <div class="image-wrap"><img loading="lazy" src="assets/apksederhana.webp" alt="Aplikasi Keuangan Sederhana"></div>
+          <div class="work-info">
+            <span class="mini-tag">UI/UX · FIGMA</span>
+            <h3>Aplikasi Keuangan Sederhana</h3>
+            <p>Eksplorasi interface aplikasi pencatatan keuangan.</p>
+            <div class="buttons">
+              <a href="https://www.figma.com/make/DrVjXVrA3i39mzzgN7CNqz/Aplikasi-Keuangan-Sederhana" target="_blank" rel="noopener">Figma ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="uiux">
+          <div class="image-wrap"><img loading="lazy" src="assets/chili-result.webp" alt="Aplikasi Sedekah"></div>
+          <div class="work-info">
+            <span class="mini-tag">UI/UX · FIGMA</span>
+            <h3>Aplikasi Sedekah</h3>
+            <p>Desain interface aplikasi dengan fokus pada alur yang sederhana dan mudah dipahami.</p>
+            <div class="buttons">
+              <a href="https://www.figma.com/design/Czn3OoQ6CCVTZVWBIEYFbB/aplikasi-sedekah" target="_blank" rel="noopener">Figma ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="design kkn">
+          <div class="image-wrap"><img loading="lazy" src="assets/kkn-id.webp" alt="KKN Creative Design"></div>
+          <div class="work-info">
+            <span class="mini-tag">KKN · DESIGN</span>
+            <h3>KKN Creative Design</h3>
+            <p>Dokumentasi visual, ID card, feed, dan materi kreatif selama KKN Kreteranggon.</p>
+            <div class="buttons">
+              <a href="https://www.instagram.com/sapa.kreteranggon/" target="_blank" rel="noopener">KKN Instagram ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="design">
+          <div class="image-wrap"><img loading="lazy" src="assets/denah-ruang-kantor.webp" alt="Visual Editing"><img loading="lazy" src="assets/editing.webp" alt="Visual Editing - tampilan login"></div>
+          <div class="work-info">
+            <span class="mini-tag">EDITING</span>
+            <h3>Visual Editing</h3>
+            <p>Kumpulan eksperimen editing dan visual yang aku kerjakan di berbagai project.</p>
+            <div class="buttons">
+              <a href="#links">More links →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<section id="about" class="about container">
+
+    <div class="about-card">
+
+        <div class="about-mark">
+            <img src="assets/nihaya.webp" alt="Foto Nihaya">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">a little story about me ♡</p>
+
+            <h2>Hi, I'm Nihaya.</h2>
+
+            <p>
+                Mahasiswi Teknik Informatika yang suka belajar hal baru lewat
+                desain, website, mobile app, editing, dan project-project kecil
+                yang bisa jadi pengalaman besar.
+            </p>
+
+            <p class="soft">
+                Website ini dibuat sebagai ruang kecil untuk menyimpan dan
+                membagikan karya-karyaku.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="quote-card">
+        <span>“</span>
+        <p>إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنْفُسِهِمْ<br><strong>"Sesungguhnya Allah tidak mengubah keadaan sesuatu kaum sehingga mereka mengubah keadaan yang ada pada diri mereka sendiri."</strong></p>
+        <span>♡</span>
+    </div>
+
+</section>
+
+    <section id="links" class="links container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">✦ my links</p>
+          <h2>Let's connect.</h2>
+          <p>Feel free to explore my little corners on the internet.</p>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a class="social-card" href="https://www.instagram.com/nhyahmdz_?stkn=MzA4djQyazYzZmZz" target="_blank" rel="noopener">
+          <span>◎</span><b>Instagram</b><small>add your handle ↗</small>
+        </a>
+        <a class="social-card" href="https://github.com/nihaya22" target="_blank" rel="noopener">
+          <span>◉</span><b>GitHub</b><small>my code space ↗</small>
+        </a>
+        <a class="social-card" href="https://www.figma.com/" target="_blank" rel="noopener">
+          <span>✦</span><b>Figma</b><small>design playground ↗</small>
+        </a>
+        <a class="social-card" href="https://www.youtube.com/watch?v=8gMAl_6p9Vo" target="_blank" rel="noopener">
+          <span>▶</span><b>YouTube</b><small>KKN after movie ↗</small>
+        </a>
+        <a class="social-card" href="https://www.instagram.com/sapa.kreteranggon/" target="_blank" rel="noopener">
+          <span>♡</span><b>KKN Instagram</b><small>sapa.kreteranggon ↗</small>
+        </a>
+        <a class="social-card"
+          href="https://wa.me/6285746554323?text=Assalamualaikum%20kak%2C%20mau%20di%20editin%20seperti%20ini%20bisa%20nggak%3F"
+          target="_blank"
+          rel="noopener">
+          <span>☏</span><b>WhatsApp</b><small>let's create together ↗</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner container">
+      <div><strong>🌿 Nihaya</strong><small>my little creative space ♡</small></div>
+      <div class="footer-nav"><a href="#home">Home</a><a href="#works">Works</a><a href="#about">About</a><a href="#links">Links</a></div>
+      <div class="footer-note">made with matcha & a little courage ♡</div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
